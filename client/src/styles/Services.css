@@ -1,0 +1,134 @@
+.servicesMainContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+  
+.servicesInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3rem; 
+    padding-bottom: 3rem; 
+    padding-left: 1rem; 
+    padding-right: 1rem;
+}
+  
+@media (min-width: 768px) {
+    .servicesInner {
+        flex-direction: row; 
+        padding: 5rem; 
+    }
+}
+  
+.servicesInfoContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+  
+.servicesInfoHeading {
+    color: white;
+    font-size: 1.875rem; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+  
+@media (min-width: 640px) {
+    .servicesInfoHeading {
+        font-size: 3rem;
+    }
+}
+  
+.servicesInfoDescription {
+    text-align: left;
+    margin: 0.5rem 0; 
+    color: white;
+    font-weight: 300;
+    font-size: 1rem; 
+    width: 91%; 
+}
+  
+@media (min-width: 768px) {
+    .servicesInfoDescription {
+        width: 75%;
+    }
+}
+  
+.servicesCardMainContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.serviceCardIconTextColor {
+    color: white;
+}  
+  
+.serviceCardMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0.75rem;
+    margin: 0.5rem; 
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+  
+.serviceCardMain:hover {
+    box-shadow: 0 10px 15px rgba(158, 158, 158, 0.2); 
+}
+
+.serviceCardIcon {
+    width: 2.5rem; 
+    height: 2.5rem; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue {
+    background-color: #2952e3;
+}
+
+.purple {
+    background-color: #8945F8;
+}
+
+.red {
+    background-color: #F84550;
+}
+  
+.serviceCardTextContainer {
+    margin-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.serviceCardHeading {
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 1.125rem; 
+}
+   
+.serviceCardDesctiption {
+    margin-top: 0.25rem; 
+    color: white;
+    font-size: 0.875rem; 
+}
+  
+@media (min-width: 768px) {
+    .serviceCardDesctiption {
+        width: 75%; 
+    }
+}
+  

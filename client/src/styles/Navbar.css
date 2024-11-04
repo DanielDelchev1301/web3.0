@@ -1,0 +1,134 @@
+.navigationMainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+  
+@media (min-width: 768px) {
+    .navigationMainContainer {
+        justify-content: center;
+    }
+}
+  
+.navigationLogoContainer {
+    display: flex;
+    flex: initial;
+    justify-content: center;
+    align-items: center;
+}
+  
+@media (min-width: 768px) {
+    .navigationLogoContainer {
+        flex: 0.5;
+    }
+}
+
+.logoImage {
+    width: 8rem;
+    cursor: pointer;
+}
+  
+.navigationItemsContainer {
+    color: white;
+    display: none; 
+    list-style-type: none; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    flex: initial;
+}
+  
+@media (min-width: 768px) {
+    .navigationItemsContainer {
+        display: flex;
+    }
+}
+  
+.navigationLoginButton {
+    background-color: #2952e3;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1.75rem;
+    padding-right: 1.75rem; 
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 9999px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.navigationLoginButton:hover {
+    background-color: #2546bd;
+}
+  
+.navigationFlexMenu {
+    display: flex;
+    position: relative;
+}
+  
+.navigationToggleButton {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+  
+@media (max-width: 768px) {
+    .navigationToggleButton {
+      display: block;
+    }
+}
+  
+.navigationItemsContainnerToggle {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: 0.5rem; 
+    padding: 0.75rem;
+    width: 70vw;
+    height: 100vh;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: none;
+    list-style-type: none; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-end; 
+    border-radius: 0.375rem; 
+    color: white;
+    animation: slide-in 0.3s ease;
+}
+  
+@media (max-width: 768px) {
+    .navigationItemsContainnerToggle {
+        display: flex; 
+    }
+}
+  
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+  
+.navigationCloseButton {
+    font-size: 1.25rem;
+    width: 100%;
+    margin: 0.5rem 0; 
+}
+  
+.navigationItemText {
+    margin-left: 1rem; 
+    margin-right: 1rem; 
+    cursor: pointer;
+}
+
+.additionalStyle {
+    margin-top: 0.5rem; 
+    margin-bottom: 0.5rem; 
+    font-size: 1.125rem; 
+}
+  
+  
