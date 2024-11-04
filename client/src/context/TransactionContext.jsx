@@ -5,20 +5,21 @@ import { contractABI, contractAddress } from "../utils/constants";
 
 export const TransactionContext = React.createContext();
 
-const getEthereum = () => {
-  if (window.ethereum) {
-    return window.ethereum;
-  } else {
-    if (navigator.userAgentData.mobile) {
-      const metamaskLink = 'https://metamask.app.link/dapp/eth-sepolia.g.alchemy.com/v2/hpogajphHaCuChTltBfb2TLVjw035KjB';
-      window.open(metamaskLink);
-    } else {
-      alert('Please install MetaMask or use a mobile device with the app.');
-    }
-  }
-};
+//find a way to connect to metamask on mobile devices
+// const getEthereum = () => {
+//   if (window.ethereum) {
+//     return window.ethereum;
+//   } else {
+//     if (navigator.userAgentData.mobile) {
+//       const metamaskLink = 'https://metamask.app.link/dapp/eth-sepolia.g.alchemy.com/v2/hpogajphHaCuChTltBfb2TLVjw035KjB';
+//       window.open(metamaskLink);
+//     } else {
+//       alert('Please install MetaMask or use a mobile device with the app.');
+//     }
+//   }
+// };
 
-const ethereum = getEthereum();
+const { ethereum } = window;
 
 export const TransactionsProvider = ({ children }) => {
   const [formData, setformData] = useState({ addressTo: "", amount: "", keyword: "", message: "" });
