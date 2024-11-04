@@ -11,7 +11,7 @@ const getEthereum = () => {
   } else {
     if (navigator.userAgentData.mobile) {
       const metamaskLink = 'https://metamask.app.link/dapp/eth-sepolia.g.alchemy.com/v2/hpogajphHaCuChTltBfb2TLVjw035KjB';
-      window.location.href = metamaskLink;
+      window.open(metamaskLink);
     } else {
       alert('Please install MetaMask or use a mobile device with the app.');
     }
